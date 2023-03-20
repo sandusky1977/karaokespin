@@ -4,31 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KaraokeSpin</title>
-  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="#">Free Trial</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact Us</a></li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">KaraokeSpin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+	<li class="nav-item"><a class="nav-link" href="/register.html">Register</a></li>
+	<li class="nav-item"><a class='nav-link' href="#">Free Trial</a></li>
+	<li class='nav-item'><a class='nav-link' href='#'>Login</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
+  
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">KaraokeSpin</h1>
+      <p class="lead">Are you ready for a great new game for karaoke night? This will keep your club, bar, restaurant, whatever hopping and having a great time.</p>
+      <a href="#" class="btn btn-primary btn-lg">Take a Spin</a>
+    </div>
+  </div>
+ 
+  <!-- How it Works section -->
+  <section class="how-it-works py-5">
+    <div class="container">
+      <h2 class="mb-4">How it Works</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Step 1: Add your singers to the queue</h5>
+              <p class="card-text">Simply add your singers to the queue and hit "spin".</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+            <h5 class="card-title">Step 2: Choose from 12 random karaoke songs</h5>
+              <p class="card-text">Each singer will be given a selection of 12 YouTube karaoke videos chosen at random.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Step 3: Sing your heart out!</h5>
+              <p class="card-text">Choose a song from the list and start singing. If you can't decide, take another spin or let the crowd choose for you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <main>
-    <!-- Your content goes here -->
-  </main>
-
-  <footer>
-    <p>&copy; 2023 KaraokeSpin</p>
+  <!-- Footer -->
+  <footer class="py-3 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2023 KaraokeSpin</p>
+        </div>
+        <div class="col-md-6 text-right">
+          <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
 
