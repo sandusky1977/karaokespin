@@ -21,11 +21,12 @@ class Host {
       // Login successful
       session_start();
       $_SESSION['email'] = $email;
-      header('Location: dashboard.php');
+      header('Location: /hosting/dashboard.phtml');
       exit;
     } else {
       // Login failed
-      return 'Invalid email or password';
+      header('Location: /login.html'); 
+      exit; 
     }
   }
 
@@ -46,11 +47,12 @@ class Host {
         // Registration successful
         session_start();
         $_SESSION['email'] = $email;
-        header('Location: dashboard.php');
+        header('Location: /hosting/dashboard.html');
         exit;
       } else {
         // Registration failed
-        return 'Registration failed';
+        header('Location: /login.html'); 
+        exit;
       }
     }
   }
@@ -60,7 +62,7 @@ class Host {
     session_start();
     session_unset();
     session_destroy();
-    header('Location: index.php');
+    header('Location: /index.html');
     exit;
   }
 }

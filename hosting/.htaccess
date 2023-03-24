@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Logged In Hosts Only"
+AuthUserFile /var/www/clients/karaokespin/.htpasswd
+Require valid-user
